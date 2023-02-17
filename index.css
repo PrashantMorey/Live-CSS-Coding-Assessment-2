@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    background-color:#004466 ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+   height: 350px;
+   width: 350px;
+   border-radius: 50%;
+   background-color: black;
+}
+.moon{
+    margin-left: 150px;
+}
+.austro{
+    margin-top: -90px;
+    margin-left: -30px;
+    animation: austronot ease-in-out infinite 3s;
+}
+@keyframes austronot{
+    100%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    0%{
+        transform: translateY(15px);
+    }
+}
+.parent2{
+    transform: translateX(-50%);
+    left: 50%;
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+.dot1{
+   position: absolute;
+   bottom: 350px;
+   left: 310px;
+}
+.dot2{
+    position: absolute;
+    bottom: 287px;
+    left: 210px;
+ }
+ .dot3{
+    position: absolute;
+    bottom: 160px;
+    left: 420px;
+ }
+ .dot4{
+    position: absolute;
+    bottom: 75px;
+    left: 350px;
+ }
+ .dot5{
+    position: absolute;
+    bottom: 120px;
+    left: 240px;
+ }
+ .watch{
+    position: absolute;
+    transform: translateZ(-50%);
+    right: 1%;
+    border: 1px solid white;
+    top: 10px;
+ }
+ .watch button{
+    background-color: transparent;
+    color: white;
+    padding: 3px 8.5px;
+    border: none;
+    font-size: 20px;
+    
+ }
